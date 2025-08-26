@@ -1,0 +1,341 @@
+{
+  "data_summary": {
+    "transactions_count": 50,
+    "targets_count": 10,
+    "transactions_total": 22573.233267416927,
+    "targets_total": 6488.689599548912,
+    "transactions_mean": 451.46466534833854,
+    "targets_mean": 648.8689599548912,
+    "transactions_std": 285.9943689698621,
+    "targets_std": 280.78319784761726,
+    "transactions_min": 30.378649352844423,
+    "transactions_max": 970.2107536403744,
+    "targets_min": 83.80513724297312,
+    "targets_max": 961.5603041058556
+  },
+  "approaches": {
+    "brute_force": {
+      "total_execution_time": 8.26457667350769,
+      "direct_matching": {
+        "matches": [
+          {
+            "transaction_id": "TXN_000022",
+            "target_id": "TGT_000003",
+            "transaction_amount": 299.223202049866,
+            "target_amount": 299.223202049866,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000028",
+            "target_id": "TGT_000008",
+            "transaction_amount": 596.4904231734221,
+            "target_amount": 596.4904231734221,
+            "difference": 0.0,
+            "match_type": "exact"
+          }
+        ],
+        "matched_transactions": [
+          "TXN_000022",
+          "TXN_000028"
+        ],
+        "matched_targets": [
+          "TGT_000003",
+          "TGT_000008"
+        ],
+        "unmatched_transactions": [
+          "TXN_000000",
+          "TXN_000001",
+          "TXN_000002",
+          "TXN_000003",
+          "TXN_000004",
+          "TXN_000005",
+          "TXN_000006",
+          "TXN_000007",
+          "TXN_000008",
+          "TXN_000009",
+          "TXN_000010",
+          "TXN_000011",
+          "TXN_000012",
+          "TXN_000013",
+          "TXN_000014",
+          "TXN_000015",
+          "TXN_000016",
+          "TXN_000017",
+          "TXN_000018",
+          "TXN_000019",
+          "TXN_000020",
+          "TXN_000021",
+          "TXN_000023",
+          "TXN_000024",
+          "TXN_000025",
+          "TXN_000026",
+          "TXN_000027",
+          "TXN_000029",
+          "TXN_000030",
+          "TXN_000031",
+          "TXN_000032",
+          "TXN_000033",
+          "TXN_000034",
+          "TXN_000035",
+          "TXN_000036",
+          "TXN_000037",
+          "TXN_000038",
+          "TXN_000039",
+          "TXN_000040",
+          "TXN_000041",
+          "TXN_000042",
+          "TXN_000043",
+          "TXN_000044",
+          "TXN_000045",
+          "TXN_000046",
+          "TXN_000047",
+          "TXN_000048",
+          "TXN_000049"
+        ],
+        "unmatched_targets": [
+          "TGT_000000",
+          "TGT_000001",
+          "TGT_000002",
+          "TGT_000004",
+          "TGT_000005",
+          "TGT_000006",
+          "TGT_000007",
+          "TGT_000009"
+        ],
+        "execution_time": 0.0,
+        "total_matches": 2
+      },
+      "subset_sum_matching": {
+        "subset_matches": [],
+        "execution_time": 8.26457667350769,
+        "total_subset_matches": 0,
+        "used_transactions": []
+      },
+      "reconciliation_metrics": {
+        "total_transactions": 50,
+        "total_targets": 10,
+        "matched_transactions": 2,
+        "matched_targets": 2,
+        "reconciliation_rate_transactions": 4.0,
+        "reconciliation_rate_targets": 20.0,
+        "unmatched_transactions": 48,
+        "unmatched_targets": 8
+      }
+    },
+    "machine_learning": {
+      "total_execution_time": 4.518114328384399,
+      "feature_engineering": {
+        "total_feature_vectors": 500,
+        "positive_samples": 2,
+        "negative_samples": 498
+      },
+      "model_performance": {
+        "random_forest": {
+          "model_type": "random_forest",
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "cv_mean": 0.9949999999999999,
+          "cv_std": 0.006123724356957924,
+          "feature_importance": {
+            "amount_diff": 0.4567740647695821,
+            "amount_ratio": 0.04172693850689451,
+            "amount_sum": 0.04011661719347755,
+            "amount_product": 0.019697724863202454,
+            "desc_similarity": 0.0024117426236816984,
+            "desc_partial": 0.007265325115817389,
+            "desc_token_sort": 0.0018468447605724384,
+            "amount_std_diff": 0.017257038028643427,
+            "amount_percentile_diff": 0.005956670252820284,
+            "sign_match": 0.0,
+            "amount_diff_normalized": 0.36864392649628747,
+            "amount_ratio_log": 0.03830310738902054,
+            "similarity_avg": 0.0
+          }
+        },
+        "logistic": {
+          "model_type": "logistic",
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "cv_mean": 0.9949999999999999,
+          "cv_std": 0.006123724356957924,
+          "feature_importance": null
+        },
+        "linear": {
+          "model_type": "linear",
+          "metrics": {
+            "mse": 0.00020159788363518426,
+            "rmse": 0.014198516951963126,
+            "accuracy": 1.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "cv_mean": NaN,
+          "cv_std": NaN,
+          "feature_importance": null
+        }
+      },
+      "dynamic_programming": {
+        "subset_matches": [
+          {
+            "target_id": "TGT_000000",
+            "target_amount": 777.3814951275034,
+            "transaction_ids": [
+              "TXN_000013",
+              "TXN_000014",
+              "TXN_000016",
+              "TXN_000029"
+            ],
+            "transaction_amounts": [
+              220.2157195714934,
+              190.0067175350296,
+              311.1998205299424,
+              55.98590859279775
+            ],
+            "combo_sum": 777.4081662292631,
+            "difference": 0.02667110175968901,
+            "num_transactions": 4
+          },
+          {
+            "target_id": "TGT_000004",
+            "target_amount": 961.5603041058556,
+            "transaction_ids": [
+              "TXN_000010",
+              "TXN_000015",
+              "TXN_000031",
+              "TXN_000032",
+              "TXN_000036",
+              "TXN_000040",
+              "TXN_000042"
+            ],
+            "transaction_amounts": [
+              30.378649352844423,
+              191.5704647548995,
+              178.8188824504186,
+              74.40107705542673,
+              311.56763148163697,
+              130.81785249633106,
+              44.04463590406621
+            ],
+            "combo_sum": 961.5991934956235,
+            "difference": 0.03888938976785994,
+            "num_transactions": 7
+          }
+        ],
+        "execution_time": 3.2965292930603027,
+        "total_subset_matches": 2,
+        "used_transactions": [
+          "TXN_000010",
+          "TXN_000032",
+          "TXN_000031",
+          "TXN_000014",
+          "TXN_000036",
+          "TXN_000029",
+          "TXN_000013",
+          "TXN_000016",
+          "TXN_000015",
+          "TXN_000042",
+          "TXN_000040"
+        ]
+      },
+      "predictions": {
+        "total_predictions": 500,
+        "high_confidence_matches": 1,
+        "best_model": "random_forest",
+        "prediction_threshold": 0.8
+      }
+    },
+    "advanced": {
+      "error": "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+    }
+  },
+  "comparison": {
+    "execution_times": {
+      "brute_force": 8.26457667350769,
+      "machine_learning": 4.518114328384399
+    },
+    "reconciliation_rates": {
+      "brute_force": 4.0,
+      "machine_learning": 0.2
+    },
+    "total_matches": {
+      "brute_force": 2,
+      "machine_learning": 1
+    },
+    "best_approach": {
+      "fastest": "machine_learning",
+      "most_accurate": "brute_force",
+      "most_matches": "brute_force"
+    },
+    "trade_offs": {
+      "speed_vs_accuracy": {
+        "efficiency_scores": {
+          "brute_force": 0.48399333178456694,
+          "machine_learning": 0.04426625478322427
+        },
+        "most_efficient": "brute_force"
+      },
+      "complexity_vs_performance": {
+        "complexity_performance": {
+          "brute_force": {
+            "complexity": 1,
+            "performance": 4.0
+          },
+          "machine_learning": {
+            "complexity": 2,
+            "performance": 0.2
+          }
+        },
+        "best_complexity_performance_ratio": "brute_force"
+      }
+    }
+  },
+  "recommendations": {
+    "best_approach": {
+      "for_speed": "machine_learning",
+      "for_accuracy": "brute_force",
+      "for_efficiency": "brute_force"
+    },
+    "use_cases": {
+      "small_datasets": "brute_force",
+      "large_datasets": "machine_learning",
+      "complex_matching": "advanced",
+      "real_time_processing": "brute_force",
+      "batch_processing": "machine_learning"
+    },
+    "optimization_suggestions": {
+      "brute_force": [
+        "Consider parallel processing for large datasets",
+        "Implement early termination for exact matches",
+        "Use hash tables for faster lookups"
+      ],
+      "machine_learning": [
+        "Feature engineering for better accuracy",
+        "Hyperparameter tuning for models",
+        "Ensemble methods for improved predictions"
+      ],
+      "advanced": [
+        "Optimize genetic algorithm parameters",
+        "Fine-tune similarity thresholds",
+        "Implement caching for repeated calculations"
+      ]
+    },
+    "next_steps": [
+      "Run benchmark analysis for performance comparison",
+      "Generate detailed visualizations",
+      "Implement production-ready version",
+      "Add data validation and error handling",
+      "Create user interface for easy interaction"
+    ]
+  },
+  "total_execution_time": 17.156720399856567
+}

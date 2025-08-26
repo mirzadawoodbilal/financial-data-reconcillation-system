@@ -1,0 +1,285 @@
+{
+  "data_summary": {
+    "transactions_count": 8,
+    "targets_count": 8,
+    "transactions_total": 1302.0,
+    "targets_total": 1302.0,
+    "transactions_mean": 162.75,
+    "targets_mean": 162.75,
+    "transactions_std": 81.09793462228247,
+    "targets_std": 81.09793462228247,
+    "transactions_min": 50.75,
+    "transactions_max": 300.0,
+    "targets_min": 50.75,
+    "targets_max": 300.0
+  },
+  "approaches": {
+    "brute_force": {
+      "total_execution_time": 0.009616851806640625,
+      "direct_matching": {
+        "matches": [
+          {
+            "transaction_id": "TXN_000000",
+            "target_id": "TGT_000002",
+            "transaction_amount": 150.0,
+            "target_amount": 150.0,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000001",
+            "target_id": "TGT_000007",
+            "transaction_amount": 75.5,
+            "target_amount": 75.5,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000002",
+            "target_id": "TGT_000006",
+            "transaction_amount": 200.0,
+            "target_amount": 200.0,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000003",
+            "target_id": "TGT_000003",
+            "transaction_amount": 125.25,
+            "target_amount": 125.25,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000004",
+            "target_id": "TGT_000001",
+            "transaction_amount": 300.0,
+            "target_amount": 300.0,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000005",
+            "target_id": "TGT_000005",
+            "transaction_amount": 50.75,
+            "target_amount": 50.75,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000006",
+            "target_id": "TGT_000004",
+            "transaction_amount": 175.0,
+            "target_amount": 175.0,
+            "difference": 0.0,
+            "match_type": "exact"
+          },
+          {
+            "transaction_id": "TXN_000007",
+            "target_id": "TGT_000000",
+            "transaction_amount": 225.5,
+            "target_amount": 225.5,
+            "difference": 0.0,
+            "match_type": "exact"
+          }
+        ],
+        "matched_transactions": [
+          "TXN_000005",
+          "TXN_000006",
+          "TXN_000001",
+          "TXN_000002",
+          "TXN_000003",
+          "TXN_000000",
+          "TXN_000004",
+          "TXN_000007"
+        ],
+        "matched_targets": [
+          "TGT_000001",
+          "TGT_000004",
+          "TGT_000000",
+          "TGT_000005",
+          "TGT_000003",
+          "TGT_000006",
+          "TGT_000002",
+          "TGT_000007"
+        ],
+        "unmatched_transactions": [],
+        "unmatched_targets": [],
+        "execution_time": 0.003885984420776367,
+        "total_matches": 8
+      },
+      "subset_sum_matching": {
+        "subset_matches": [],
+        "execution_time": 0.0048198699951171875,
+        "total_subset_matches": 0,
+        "used_transactions": []
+      },
+      "reconciliation_metrics": {
+        "total_transactions": 8,
+        "total_targets": 8,
+        "matched_transactions": 8,
+        "matched_targets": 8,
+        "reconciliation_rate_transactions": 100.0,
+        "reconciliation_rate_targets": 100.0,
+        "unmatched_transactions": 0,
+        "unmatched_targets": 0
+      }
+    },
+    "machine_learning": {
+      "total_execution_time": 0.9890098571777344,
+      "feature_engineering": {
+        "total_feature_vectors": 64,
+        "positive_samples": 8,
+        "negative_samples": 56
+      },
+      "model_performance": {
+        "random_forest": {
+          "model_type": "random_forest",
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "cv_mean": 1.0,
+          "cv_std": 0.0,
+          "feature_importance": {
+            "amount_diff": 0.42081389723594687,
+            "amount_ratio": 0.04281131702731892,
+            "amount_sum": 0.0705514831854356,
+            "amount_product": 0.03943014286542902,
+            "desc_similarity": 0.018936681321706967,
+            "desc_partial": 0.014511619192963874,
+            "desc_token_sort": 0.02033188009763671,
+            "amount_std_diff": 0.004567218561467978,
+            "amount_percentile_diff": 0.005717081670894753,
+            "sign_match": 0.0,
+            "amount_diff_normalized": 0.30669183661457416,
+            "amount_ratio_log": 0.038007488192095096,
+            "similarity_avg": 0.017629354034529938
+          }
+        },
+        "logistic": {
+          "model_type": "logistic",
+          "metrics": {
+            "accuracy": 0.9230769230769231,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "cv_mean": 0.8854545454545455,
+          "cv_std": 0.08806458936954424,
+          "feature_importance": null
+        },
+        "linear": {
+          "model_type": "linear",
+          "metrics": {
+            "mse": 0.07762406583317259,
+            "rmse": 0.27861095784834555,
+            "accuracy": 0.9230769230769231,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "cv_mean": NaN,
+          "cv_std": NaN,
+          "feature_importance": null
+        }
+      },
+      "dynamic_programming": {
+        "subset_matches": [],
+        "execution_time": 0.0022122859954833984,
+        "total_subset_matches": 0
+      },
+      "predictions": {
+        "total_predictions": 64,
+        "high_confidence_matches": 7,
+        "best_model": "random_forest",
+        "prediction_threshold": 0.8
+      }
+    },
+    "advanced": {
+      "error": "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+    }
+  },
+  "comparison": {
+    "execution_times": {
+      "brute_force": 0.009616851806640625,
+      "machine_learning": 0.9890098571777344
+    },
+    "reconciliation_rates": {
+      "brute_force": 100.0,
+      "machine_learning": 10.9375
+    },
+    "total_matches": {
+      "brute_force": 8,
+      "machine_learning": 7
+    },
+    "best_approach": {
+      "fastest": "brute_force",
+      "most_accurate": "brute_force",
+      "most_matches": "brute_force"
+    },
+    "trade_offs": {
+      "speed_vs_accuracy": {
+        "efficiency_scores": {
+          "brute_force": 10398.413328044428,
+          "machine_learning": 11.059040433845169
+        },
+        "most_efficient": "brute_force"
+      },
+      "complexity_vs_performance": {
+        "complexity_performance": {
+          "brute_force": {
+            "complexity": 1,
+            "performance": 100.0
+          },
+          "machine_learning": {
+            "complexity": 2,
+            "performance": 10.9375
+          }
+        },
+        "best_complexity_performance_ratio": "brute_force"
+      }
+    }
+  },
+  "recommendations": {
+    "best_approach": {
+      "for_speed": "brute_force",
+      "for_accuracy": "brute_force",
+      "for_efficiency": "brute_force"
+    },
+    "use_cases": {
+      "small_datasets": "brute_force",
+      "large_datasets": "machine_learning",
+      "complex_matching": "advanced",
+      "real_time_processing": "brute_force",
+      "batch_processing": "machine_learning"
+    },
+    "optimization_suggestions": {
+      "brute_force": [
+        "Consider parallel processing for large datasets",
+        "Implement early termination for exact matches",
+        "Use hash tables for faster lookups"
+      ],
+      "machine_learning": [
+        "Feature engineering for better accuracy",
+        "Hyperparameter tuning for models",
+        "Ensemble methods for improved predictions"
+      ],
+      "advanced": [
+        "Optimize genetic algorithm parameters",
+        "Fine-tune similarity thresholds",
+        "Implement caching for repeated calculations"
+      ]
+    },
+    "next_steps": [
+      "Run benchmark analysis for performance comparison",
+      "Generate detailed visualizations",
+      "Implement production-ready version",
+      "Add data validation and error handling",
+      "Create user interface for easy interaction"
+    ]
+  },
+  "total_execution_time": 1.0295448303222656
+}

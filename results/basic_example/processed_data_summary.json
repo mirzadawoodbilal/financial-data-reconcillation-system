@@ -1,0 +1,14 @@
+{
+  "transactions_count": 50,
+  "targets_count": 10,
+  "transactions_total": 22573.233267416927,
+  "targets_total": 6488.689599548912,
+  "transactions_mean": 451.46466534833854,
+  "targets_mean": 648.8689599548912,
+  "transactions_std": 285.9943689698621,
+  "targets_std": 280.78319784761726,
+  "transactions_min": 30.378649352844423,
+  "transactions_max": 970.2107536403744,
+  "targets_min": 83.80513724297312,
+  "targets_max": 961.5603041058556
+}

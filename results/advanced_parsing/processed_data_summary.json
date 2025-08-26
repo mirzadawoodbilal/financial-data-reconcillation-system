@@ -1,0 +1,14 @@
+{
+  "transactions_count": 8,
+  "targets_count": 8,
+  "transactions_total": 1302.0,
+  "targets_total": 1302.0,
+  "transactions_mean": 162.75,
+  "targets_mean": 162.75,
+  "transactions_std": 81.09793462228247,
+  "targets_std": 81.09793462228247,
+  "transactions_min": 50.75,
+  "transactions_max": 300.0,
+  "targets_min": 50.75,
+  "targets_max": 300.0
+}
